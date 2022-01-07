@@ -3,25 +3,16 @@
 <header>
     <title>狼人杀裁判助手</title>
     <script src="./vue.js"></script>
+    <script src="./src/components/message.js"></script>
 </header>
 
 <body>
-    <script>
-        Vue.component('message', {
-            props:['content'],
-            template: `
-            <div>
-                {{ content }}
-            </div>`
-        })
-    </script>
-
     <div id='app'>
         <message content="狼人杀裁判助手"></message>
     </div>
 
     <script>
-        var test = new Vue({
+        var app = new Vue({
             el: '#app',
         });
     </script>
